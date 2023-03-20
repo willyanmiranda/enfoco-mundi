@@ -1,0 +1,162 @@
+.footer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+    color: #ffffffd4;
+    margin-top: 20px;
+    position: fixed;
+    bottom: 0;
+}
+
+.footer-bottom {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px
+}
+
+.app-logo .apps {
+    display: flex;
+    align-items: center;
+    height: 35px
+}
+
+.footer-content {
+    height: 100%;
+    max-width: 1240px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px
+}
+
+.header-footer {
+    display: flex;
+    gap: 20px;
+    width: 100%
+}
+
+.footer .logo {
+    width: 20%
+}
+
+.footer .header-footer-content {
+    display: flex;
+    width: 110%;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    flex-wrap: wrap
+}
+
+.footer ul li a {
+    font-size: 15px;
+    font-weight: 300;
+    text-decoration: none;
+    color: #ffffffd4;
+    width: 34px;
+    height: 34px;
+}
+
+.footer .app-logo {
+    display: flex;
+    align-items: center;
+    gap: 60px
+}
+
+.footer .app-logo img {
+    width: 114px;
+    height: 44px
+}
+
+.footer .footer-social-media {
+    display: flex;
+    align-items: center
+}
+
+.footer .footer-social-media img {
+    height: 20px;
+    width: 20px;
+    padding: 7px
+}
+
+.footer .footer-social-media a {
+    border-radius: 50%;
+    height: 34px;
+    width: 34px;
+    overflow: hidden;
+    text-decoration: none
+}
+
+.footer .footer-social-media a :hover {
+    background-color: #54595f;
+    border-radius: 50%
+}
+
+.direitos {
+    font-size: 13px;
+    color: #f5f5f5e3
+}
+
+@media(max-width: 500px) {
+    .footer-bottom {
+        justify-content:center;
+        flex-direction: column-reverse;
+        gap: 20px
+    }
+
+    .footer .app-logo {
+        gap: 20px
+    }
+
+    .footer {
+        height: auto;
+        padding: 20px 0 40px
+    }
+
+    .footer .logo {
+        width: 100%;
+        padding-left: 100px
+    }
+
+    .footer .header-footer-content {
+        flex-direction: column;
+        width: 100%!important;
+        gap: 20px;
+        padding-left: 100px;
+        align-items: flex-start
+    }
+
+    .header-footer {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0
+    }
+
+    .footer .app-logo {
+        flex-direction: column
+    }
+
+    .footer .app-logo img {
+        width: 100%;
+        height: 100%
+    }
+
+    .footer .footer-social-media {
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+        width: 100%;
+        align-items: flex-start;
+        padding-left: 85px
+    }
+
+    .direitos {
+        text-align: center
+    }
+}
