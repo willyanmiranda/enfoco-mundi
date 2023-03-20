@@ -32,14 +32,117 @@
                     <input type="text" id="search" placeholder="O que está buscando?" class="search-input">
                 </div>
             </div>
-            
         </div>
         <hr class="lineCategory" style="background-color:#9C28B9">
+        <div class="menu-aside" id="nav-aside">
+            <div class="menu-aside-header">
+                <img src="/assets/logo-light.svg"
+                    style="width: 200px; height: 64px;" alt="Logo">
+                <button id="fechar-menu">
+                    <span style="font-size: 20px; font-weight:bold;">✕</span>
+                </button>
+            </div>
+            <ul>
+                <li>
+                    <a id="destaque" href="/">
+                        HOME
+                    </a>
+                </li>
+                <li>
+                    <a href="/">
+                        Capas
+                    </a>
+                </li>
+                <li>
+                    <a href="/">
+                        Polícia
+                    </a>
+                </li>
+                <li>
+                    <a href="/">
+                        Política
+                    </a>
+                </li>
+                <li>
+                    <a href="/">
+                        BBB
+                    </a>
+                </li>
+                <li>
+                    <a href="/">
+                        Cidades
+                    </a>
+                </li>
+                <li>
+                    <a href="/">
+                        Brasil & Mundo
+                    </a>
+                </li>
+                <li>
+                    <a href="/">
+                        Entretenimento
+                    </a>
+                </li>
+                <li>
+                    <a href="/">
+                        Esportes
+                    </a>
+                </li>
+                <li>
+                    <a href="/">
+                        Webstories
+                    </a>
+                </li>
+                <li>
+                    <a href="/">
+                        Tá Bombando!
+                    </a>
+                </li>
+                <li>
+                    <a href="/">
+                        Vídeos
+                    </a>
+                </li>
+            </ul>
+            <div class="menu-aside-footer">
+                <a href="/" target="_blank" rel="noopener">
+                    <img src="/assets/facebook.svg"
+                        alt="Logo-facebook" width="25" height="25" />
+                </a>
+                <a href="/" target="_blank" rel="noopener">
+                    <img src="/assets/twitter.svg"
+                        alt="Logo-twitter" width="25" height="25" />
+                </a>
+                <a href="/" target="_blank" rel="noopener">
+                    <img src="/assets/instagram.svg"
+                        alt="Logo-instagram" />
+                </a>
+                <a href="/" target="_blank"
+                    rel="noopener">
+                    <img src="/assets/youtube.svg" class="icon"
+                        alt="Logo-twitter" width="25" height="25"
+                    />
+                </a>
+            </div>
+        </div>
     </header>
-</body>
+    <script>
+        let menu = document.querySelector("#nav-aside")
+        let btnClose = document.querySelector("#fechar-menu")
+        let btnOpen = document.querySelector("#aside-menu")
+        
+        btnClose.addEventListener('click', function(e) {
+            e.preventDefault();
 
-</html>
+            menu.classList.toggle('menu-aside-open')
+        })
 
+        btnOpen.addEventListener('click', function(e) {
+            e.preventDefault();
+
+            menu.classList.toggle('menu-aside-open')
+        })
+    </script>
 </body>
 
 </html>
