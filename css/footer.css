@@ -1,4 +1,4 @@
-.footer {
+.enfo-footer {
     width: 100%;
     display: flex;
     align-items: center;
@@ -6,8 +6,6 @@
     background-color: #000;
     color: #ffffffd4;
     margin-top: 20px;
-    position: fixed;
-    bottom: 0;
 }
 
 .footer-bottom {
@@ -41,11 +39,11 @@
     width: 100%
 }
 
-.footer .logo {
+.enfo-footer .logo {
     width: 20%
 }
 
-.footer .header-footer-content {
+.enfo-footer .header-footer-content {
     display: flex;
     width: 110%;
     justify-content: center;
@@ -54,7 +52,7 @@
     flex-wrap: wrap
 }
 
-.footer ul li a {
+.enfo-footer ul li a {
     font-size: 15px;
     font-weight: 300;
     text-decoration: none;
@@ -63,29 +61,29 @@
     height: 34px;
 }
 
-.footer .app-logo {
+.enfo-footer .app-logo {
     display: flex;
     align-items: center;
     gap: 60px
 }
 
-.footer .app-logo img {
+.enfo-footer .app-logo img {
     width: 114px;
     height: 44px
 }
 
-.footer .footer-social-media {
+.enfo-footer .footer-social-media {
     display: flex;
     align-items: center
 }
 
-.footer .footer-social-media img {
+.enfo-footer .footer-social-media img {
     height: 20px;
     width: 20px;
     padding: 7px
 }
 
-.footer .footer-social-media a {
+.enfo-footer .footer-social-media a {
     border-radius: 50%;
     height: 34px;
     width: 34px;
@@ -93,7 +91,7 @@
     text-decoration: none
 }
 
-.footer .footer-social-media a :hover {
+.enfo-footer .footer-social-media a :hover {
     background-color: #54595f;
     border-radius: 50%
 }
@@ -110,21 +108,21 @@
         gap: 20px
     }
 
-    .footer .app-logo {
+    .enfo-footer .app-logo {
         gap: 20px
     }
 
-    .footer {
+    .enfo-footer {
         height: auto;
         padding: 20px 0 40px;
         position: static;
     }
 
-    .footer .logo {
+    .enfo-footer .logo {
         width: 100%;
     }
 
-    .footer .header-footer-content {
+    .enfo-footer .header-footer-content {
         flex-direction: column;
         width: 100%!important;
         gap: 20px;
@@ -138,16 +136,16 @@
         padding-left: 40px;
     }
 
-    .footer .app-logo {
+    .enfo-footer .app-logo {
         flex-direction: column
     }
 
-    .footer .app-logo img {
+    .enfo-footer .app-logo img {
         width: 100%;
         height: 100%
     }
 
-    .footer .footer-social-media {
+    .enfo-footer .footer-social-media {
         display: flex;
         justify-content: flex-start;
         flex-wrap: nowrap;

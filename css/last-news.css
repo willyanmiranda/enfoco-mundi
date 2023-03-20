@@ -1,0 +1,106 @@
+.last-news {
+    padding-top: 30px;
+} 
+
+.enfo-ultimas-noticias {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 20px;
+    grid-row: span 2
+}
+
+.enfo-ultimas-noticias header {
+    display: flex;
+    gap: 10px;
+    align-items: center
+}
+
+.enfo-ultimas-noticias .last-news-title {
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #000;
+    font-size: 20px;
+    white-space: nowrap
+}
+
+.enfo-ultimas-noticias .container {
+    display: flex;
+    height: 102px;
+    gap: 15px
+}
+
+.enfo-ultimas-noticias figure {
+    display: flex;
+    width: 100%
+}
+
+.enfo-ultimas-noticias header img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover
+}
+
+.article-img {
+    width: 115px;
+    height: 95px;
+}
+
+.enfo-ultimas-noticias .last-news-article {
+    gap: 10px;
+    width: 253px;
+    height: 102px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.enfo-ultimas-noticias .last-news-article h2 {
+    color: #000;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 17px;
+    margin: 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden
+}
+
+.enfo-ultimas-noticias .last-news-article h2:hover {
+    color: #54595f
+}
+
+.enfo-ultimas-noticias .last-news-article h3 {
+    color: #fff;
+    background-color: #000;
+    font-size: 10px;
+    font-weight: 300;
+    padding: 2px;
+    border-radius: 5px;
+    height: 20px;
+    width: 52px;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.enfo-ultimas-noticias .last-news-article h3:hover {
+    opacity: .7
+}
+
+.last-news-content {
+    margin-left: 15px;
+}
+
+.article-info-tags {
+    margin-top: 100px;
+}
+
+.tag {
+    background-color: rgb(174, 173, 192);
+    margin: 10px;
+    padding: 5px;
+    font-weight: 600;
+    font-size: 15px;
+}
