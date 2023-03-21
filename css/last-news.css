@@ -97,26 +97,34 @@
 
 .article-info-tags {
     margin-top: 100px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #333;
+    display: block;
+    flex-wrap: wrap;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #d8d8d8;
+    grid-column: span 3;
+    font-size: 9pt;
+    margin: 10px;
+    user-select: none;
 }
 
 .tag a {
-    background-color: rgb(187, 185, 212);
-    margin: 10px;
-    padding: 5px;
-    font-weight: 600;
     font-size: 12px;
     font-family: sans-serif;
-    letter-spacing: 2px;
+    font-weight: 600;
+}
+
+.tag {
+    background: #e6e6e6;
+    padding: 5px 8px;
+    display: inline-block;
+    margin: 0 16px 16px 0;
 }
 
 @media(max-width: 700px) {
     .last-news {
         display: none;
-    }
-
-    .article-info-tags {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
     }
 }

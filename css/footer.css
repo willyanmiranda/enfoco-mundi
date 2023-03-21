@@ -158,4 +158,8 @@
     .direitos {
         text-align: center
     }
+
+    .footer-content {
+        width: 100%;
+    }
 }
