@@ -128,3 +128,18 @@
         display: none;
     }
 }
+
+@media(max-width: 300px) {
+    .tag a {
+        font-size: 7px;
+    }
+
+    .tag {
+        padding: 3px 6px;
+        margin: 8px 16px 5px 0;
+    }
+
+    .tag-title {
+        margin-bottom: 10px;
+    }
+}

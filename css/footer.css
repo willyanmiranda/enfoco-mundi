@@ -167,4 +167,8 @@
     .enfo-footer .logo img {
         width: 100% !important;
     }
+
+    .enfo-footer ul li a {
+        font-size: 13px;
+    }
 }
