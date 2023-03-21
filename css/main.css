@@ -346,5 +346,13 @@ font-weight: 600;
 
     .enfo-article-header .social-media {
         margin-bottom: 0
-    }    
+    }
+
+    .menu-aside-header img {
+        width: 120px;
+    }
+
+    .menu-aside-header button {
+        padding: 0px 5px;
+    }
 }
