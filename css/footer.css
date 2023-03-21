@@ -30,7 +30,9 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    padding-top: 10px
+    padding-top: 10px;
+    padding-left: 17px;
+    padding-right: 17px;
 }
 
 .header-footer {
@@ -101,7 +103,7 @@
     color: #f5f5f5e3
 }
 
-@media(max-width: 600px) {
+@media(max-width: 900px) {
     .footer-bottom {
         justify-content:center;
         flex-direction: column-reverse;

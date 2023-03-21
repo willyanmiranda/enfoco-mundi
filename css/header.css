@@ -43,7 +43,7 @@
     max-width: 1200px;
     margin: 0 auto;
     align-items: center;
-    padding: 5px 0
+    padding: 5px 17px
 }
 
 .header-container {
@@ -157,9 +157,10 @@
 }
 
 
-@media(max-width: 600px) {
+@media(max-width: 700px) {
     #aside-menu {
         margin-left: 40px;
+        margin-right: 17px;
     }
 
     .header-content .logo {
@@ -177,6 +178,8 @@
         flex-direction: column-reverse;
         padding-top: 20px;
         width: 100%;
+        padding-left: 0;
+        padding-right: 0;
     }
 
     .header-container {
@@ -191,5 +194,15 @@
 
     .menu-aside {
         width: 100%;
+    }
+}
+
+@media(max-width: 330px) {
+    #aside-menu {
+        margin-left: 20px;
+    }
+
+    .header-content .logo img {
+        min-width: 100px;
     }
 }
