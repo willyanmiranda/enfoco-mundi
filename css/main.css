@@ -114,7 +114,7 @@ color: blue;
 }
 
 .enfo-default-gray {
-    color: gray;
+    color: rgb(49, 47, 47);
 }
 
 .enfo-article-content figure{
@@ -262,13 +262,20 @@ pointer-events: none;
 
 .enfo-article-content .enfo-image-info {
 text-align: center;
-color: rgb(91, 91, 91);
+color: rgb(49, 47, 47);
 font-weight: 600;
 }
 
 .enfo-social-btn img {
     width: 20px;
     height: 20px;
+}
+
+.tweet img {
+    width: 517px;
+    height: 325px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 @media(max-width: 600px) {
