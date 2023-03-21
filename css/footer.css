@@ -135,7 +135,6 @@
         flex-direction: column;
         align-items: center;
         padding: 20px 0;
-        padding-left: 40px;
     }
 
     .enfo-footer .app-logo {
@@ -161,5 +160,11 @@
 
     .footer-content {
         width: 100%;
+    }
+}
+
+@media(max-width: 300px){
+    .enfo-footer .logo img {
+        width: 100% !important;
     }
 }
