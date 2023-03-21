@@ -310,4 +310,8 @@ font-weight: 600;
     .enfo-image-author {
         font-size: 12px;
     }
+
+    .tweet img {
+        width: 100%;
+    }
 }
