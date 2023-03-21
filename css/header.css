@@ -15,7 +15,7 @@
 }
 
 .header-content .logo a img{
-    width: 270px;
+    width: 235px;
     height: 69px;
 }
 
@@ -157,7 +157,7 @@
 }
 
 
-@media(max-width: 500px) {
+@media(max-width: 600px) {
     #aside-menu {
         margin-left: 40px;
     }
@@ -175,7 +175,7 @@
     .header-wrapper {
         align-items: flex-start;
         flex-direction: column-reverse;
-        padding-top: 10px;
+        padding-top: 20px;
         width: 100%;
     }
 
