@@ -1,4 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+@font-face {
+    font-family: 'Inter';
+    src: url("/assets/fonts/Inter-Regular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: 'Inter-bold';
+    src: url("/assets/fonts/Inter-Bold.otf") format("opentype");
+}
 
 * {
     margin: 0;

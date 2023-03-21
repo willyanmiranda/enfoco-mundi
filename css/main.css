@@ -29,6 +29,7 @@
     user-select: none;
     word-wrap: break-word;
     hyphens: none;
+    font-family: 'Inter-bold';
 } 
 .enfo-article-header .spanCategory {
     font-size: 16px;
@@ -256,8 +257,8 @@ pointer-events: none;
 }
 
 #stories-img {
-    width: 873px;
-    height: 1634px
+    width: 739px;
+    height: 1600px;
 }
 
 .enfo-article-content .enfo-image-info {
@@ -269,6 +270,11 @@ font-weight: 600;
 .enfo-social-btn img {
     width: 20px;
     height: 20px;
+}
+
+.tweet {
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .tweet img {
