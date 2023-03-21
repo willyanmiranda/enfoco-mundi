@@ -256,13 +256,13 @@ pointer-events: none;
 }
 
 #stories-img {
-    width: 880px;
-    height: 1815px
+    width: 739px;
+    height: 1600px
 }
 
 .enfo-article-content .enfo-image-info {
 text-align: center;
-color: gray;
+color: rgb(91, 91, 91);
 font-weight: 600;
 }
 
