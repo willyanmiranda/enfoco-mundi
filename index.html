@@ -16,321 +16,112 @@
     <link rel="stylesheet" type="text/css" href="./css/last-news.css" media="screen">
     <link rel="stylesheet" type="text/css" href="./css/footer.css" media="screen">
     <title>Enfoco</title>
-    <style>
-        .enfo-header {
-            width: 100%;
-            background-color: #fff;
-            display: inline-block;
-            position: relative;
-            margin-bottom: 15px;
-            box-shadow: 0 -50px 90px 0 rgb(0 0 0/27%)
-        }
-
-        .header-content .logo {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            width: fit-content
-        }
-
-        .header-content .logo a img{
-            width: 235px;
-            height: 69px;
-        }
-
-        .header-content {
-            width: 100%;
-            border-top: 1px solid #e9e9e9;
-            border-bottom: 2px solid #000
-        }
-
-        .lineCategory {
-            width: 100%;
-            height: 10px
-        }
-
-        .header-content hr {
-            width: 100%;
-            height: 2px;
-            background-color: #000
-        }
-
-        .header-wrapper {
-            display: flex;
-            justify-content: space-between;
-            gap: 10px;
-            max-width: 1200px;
-            margin: 0 auto;
-            align-items: center;
-            padding: 5px 17px
-        }
-
-        .header-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        #aside-menu {
-            background-color: #000;
-            width: 100%;
-            width: 60px;
-            height: 35px;
-            border-radius: 45px;
-            display: block;
-            margin-left: 50px;
-        }
-
-        #aside-menu span {
-            font-size: 20px;
-            color:#FFF;
-            font-weight:bold
-        }
-
-        .search-bar {
-            display: flex;
-            align-items: center;
-            background-color: #ffffff2e;
-            border: 1px solid #afafaf;
-            border-radius: 95px;
-            width: 200px;
-            overflow: hidden;
-            padding: 10px;
-            gap: 5px;
-        }
-
-        .search-bar input {
-            width: 100%;
-            font-size: 15px;
-        }
-
-        .search-bar button {
-            background-color: transparent;
-        }
-
-        .menu-aside {
-            visibility: hidden;
-            background: #000;
-            position: fixed;
-            left: 0;
-            top: 0;
-            width: 88%;
-            max-width: 400px;
-            padding-top: 9px;
-            height: 100vh;
-            overflow-x: hidden;
-            z-index: 2;
-        }
-
-        .menu-aside-open {
-            visibility: visible;
-        }
-
-        .menu-aside-header {
-            border-bottom: 1px solid #fff;
-            justify-content: space-around;
-            display: flex;
-            align-items: center;
-            padding-bottom: 14px;
-        }
-
-        .menu-aside-header button{
-            font-size: 20px;
-            font-weight: 700;
-            border-radius: 20px;
-            background: #fff;
-            color: #000;
-            padding: 7px 20px;
-        }
-
-        .menu-aside-header span {
-            font-size: 20px;
-            font-weight: bold;
-        }
-
-        .menu-aside ul {
-            color: #cccc;
-            padding: 20px;
-        }
-
-        .menu-aside li {
-            padding: 8px 0;
-        }
-
-        .menu-aside ul li a {
-            font-size: 16px;
-            color: #ccc;
-        }
-
-        .menu-aside-footer {
-            display: flex;
-            padding: 30px 20px;
-            justify-content: start;
-            gap: 10px;
-            border-top: 1px solid #edededed;
-        }
-
-        #destaque {
-            font-weight: 700;
-            color: white;
-        }
-
-
-        @media(max-width: 700px) {
-            #aside-menu {
-                margin-left: 40px;
-                margin-right: 17px;
-            }
-
-            .header-content .logo {
-                max-width: 235px;
-                display: block;
-            }
-
-            .header-content .logo img{
-                min-width: 200px;
-                width: 100%!important;
-            }
-
-            .header-wrapper {
-                align-items: flex-start;
-                flex-direction: column-reverse;
-                padding-top: 20px;
-                width: 100%;
-                padding-left: 0;
-                padding-right: 0;
-            }
-
-            .header-container {
-                justify-content: flex-start;
-                padding-left: 20px;
-            }
-
-            .search-bar {
-                width: 83%;
-                margin-left: 20px;
-            }
-
-            .menu-aside {
-                width: 100%;
-            }
-        }
-
-        @media(max-width: 330px) {
-            #aside-menu {
-                margin-left: 20px;
-            }
-
-            .header-content .logo img {
-                min-width: 50px;
-            }
-
-            .search-bar {
-                margin-left: 10px;
-                padding: 5px;
-            }
-
-            .search-bar input {
-                font-size: 10px;
-            }
-        }
-
-    </style>
 </head>
 
 <body>
-    <header class="enfo-header">
-        <div class="header-content">
-            <div class="header-wrapper">
-                <div class="header-container">
-                    <figure class="logo">
+    <header class="enfo-header" style="width: 100%; background-color: #fff; display: inline-block; position: relative; margin-bottom: 15px; box-shadow: 0 -50px 90px 0 rgb(0 0 0/27%)">
+        <div class="header-content" style="width: 100%; border-top: 1px solid #e9e9e9; border-bottom: 2px solid #000">
+            <div class="header-wrapper" style=" display: flex; justify-content: space-between; gap: 10px; max-width: 1200px; margin: 0 auto; align-items: center; padding: 5px 17px">
+                <div class="header-container" style="display: flex; justify-content: center; align-items: center;">
+                    <figure class="logo" style="display: flex; flex-direction: row; justify-content: space-between; width: fit-content">
                         <a href="/">
-                            <img src="/assets/icons/logo-dark.svg" alt="Logo">
+                            <img src="/assets/icons/logo-dark.svg" alt="Logo" width="235px" height="69px">
                         </a>
                     </figure>
-                    <button id="aside-menu">
-                        <span>☰</span>
+                    <button id="aside-menu" style="background-color: #000; width: 60px; height: 35px; border-radius: 45px; display: block; margin-left: 50px;">
+                        <span style="font-size: 20px; color:#FFF; font-weight:bold">☰</span>
                     </button>
                 </div>
-                <div class="search-bar">
-                    <button class="search-button" aria-label="search button">
+                <div class="search-bar" style="display: flex; align-items: center; background-color: #ffffff2e; border: 1px solid #afafaf; border-radius: 95px; width: 200px; overflow: hidden; padding: 10px; gap: 5px;">
+                    <button class="search-button" aria-label="search button" style="background-color: transparent;">
                         <img src="/assets/icons/icons-search.svg" alt="search" style="height: 26px; width: 27px;">
                     </button>
-                    <input type="text" id="search" placeholder="O que está buscando?" class="search-input">
+                    <input type="text" id="search" placeholder="O que está buscando?" class="search-input" style="width: 100%; font-size: 15px;">
                 </div>
             </div>
         </div>
-        <hr class="lineCategory" style="background-color:#9C28B9">
-        <div class="menu-aside" id="nav-aside">
-            <div class="menu-aside-header">
+        <hr class="lineCategory" style="background-color:#9C28B9;  width: 100%; height: 10px;">
+        <div class="menu-aside" id="nav-aside" style="  visibility: hidden;
+                                                        background: #000;
+                                                        position: fixed;
+                                                        left: 0;
+                                                        top: 0;
+                                                        width: 88%;
+                                                        max-width: 400px;
+                                                        padding-top: 9px;
+                                                        height: 100vh;
+                                                        overflow-x: hidden;
+                                                        z-index: 2;">
+
+            <div class="menu-aside-header" style="border-bottom: 1px solid #fff; justify-content: space-around; display: flex; align-items: center; padding-bottom: 14px;">
                 <img src="/assets/icons/logo-light.svg" style="width: 200px; height: 64px;" alt="Logo">
-                <button id="fechar-menu">
+                <button id="fechar-menu" style=" font-size: 20px; font-weight: 700; border-radius: 20px; background: #fff; color: #000; padding: 7px 20px;">
                     <span style="font-size: 20px; font-weight:bold;">✕</span>
                 </button>
             </div>
-            <ul>
+            <ul style="color: #cccc; padding: 20px;">
                 <li>
-                    <a id="destaque" href="/">
+                    <a id="destaque" href="/" style="font-weight: 700; color: white;">
                         HOME
                     </a>
                 </li>
                 <li>
-                    <a href="/">
+                    <a href="/" style="font-size: 16px; color: #ccc;">
                         Capas
                     </a>
                 </li>
                 <li>
-                    <a href="/">
+                    <a href="/" style="font-size: 16px; color: #ccc;">
                         Polícia
                     </a>
                 </li>
                 <li>
-                    <a href="/">
+                    <a href="/" style="font-size: 16px; color: #ccc;">
                         Política
                     </a>
                 </li>
                 <li>
-                    <a href="/">
+                    <a href="/" style="font-size: 16px; color: #ccc;">
                         BBB
                     </a>
                 </li>
                 <li>
-                    <a href="/">
+                    <a href="/" style="font-size: 16px; color: #ccc;">
                         Cidades
                     </a>
                 </li>
                 <li>
-                    <a href="/">
+                    <a href="/" style="font-size: 16px; color: #ccc;">
                         Brasil & Mundo
                     </a>
                 </li>
                 <li>
-                    <a href="/">
+                    <a href="/" style="font-size: 16px; color: #ccc;">
                         Entretenimento
                     </a>
                 </li>
                 <li>
-                    <a href="/">
+                    <a href="/" style="font-size: 16px; color: #ccc;">
                         Esportes
                     </a>
                 </li>
                 <li>
-                    <a href="/">
+                    <a href="/" style="font-size: 16px; color: #ccc;">
                         Webstories
                     </a>
                 </li>
                 <li>
-                    <a href="/">
+                    <a href="/" style="font-size: 16px; color: #ccc;">
                         Tá Bombando!
                     </a>
                 </li>
                 <li>
-                    <a href="/">
+                    <a href="/" style="font-size: 16px; color: #ccc;">
                         Vídeos
                     </a>
                 </li>
             </ul>
-            <div class="menu-aside-footer">
+            <div class="menu-aside-footer" style="display: flex; padding: 30px 20px; justify-content: start; gap: 10px; border-top: 1px solid #edededed;">
                 <a href="/" target="_blank" rel="noopener">
                     <img src="/assets/icons/facebook.svg" alt="Logo-facebook" width="25" height="25">
                 </a>

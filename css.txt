@@ -124,11 +124,6 @@
     padding: 7px 20px;
 }
 
-.menu-aside-header span {
-    font-size: 20px;
-    font-weight: bold;
-}
-
 .menu-aside ul {
     color: #cccc;
     padding: 20px;
