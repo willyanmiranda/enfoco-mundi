@@ -307,19 +307,16 @@ menu aside html
 JAVASCRIPT
 
 <script>
-        let menu = document.querySelector("#nav-aside")
-        let btnClose = document.querySelector("#fechar-menu")
-        let btnOpen = document.querySelector("#aside-menu")
+        const menu = document.querySelector("#nav-aside")
+        const btnClose = document.querySelector("#fechar-menu")
+        const btnOpen = document.querySelector("#aside-menu")
 
         btnClose.addEventListener('click', function (e) {
             e.preventDefault();
-
-            menu.classList.toggle('menu-aside-open')
+            menu.style.visibility = 'hidden';
         })
-
         btnOpen.addEventListener('click', function (e) {
             e.preventDefault();
-
-            menu.classList.toggle('menu-aside-open')
+            menu.style.visibility = 'visible';
         })
 </script>
