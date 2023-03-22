@@ -210,3 +210,116 @@
         font-size: 10px;
     }
 }
+
+
+
+
+
+menu aside html
+
+<div class="menu-aside" id="nav-aside" style="  visibility: hidden; background: #000; position: fixed; left: 0; top: 0; width: 88%; max-width: 400px; padding-top: 9px; height: 100vh; overflow-x: hidden; z-index: 2;">
+
+            <div class="menu-aside-header" style="border-bottom: 1px solid #fff; justify-content: space-around; display: flex; align-items: center; padding-bottom: 14px;">
+                <img src="/assets/icons/logo-light.svg" style="width: 200px; height: 64px;" alt="Logo">
+                <button id="fechar-menu" style=" font-size: 20px; font-weight: 700; border-radius: 20px; background: #fff; color: #000; padding: 7px 20px;">
+                    <span style="font-size: 20px; font-weight:bold;">✕</span>
+                </button>
+            </div>
+            <ul style="color: #cccc; padding: 20px;">
+                <li>
+                    <a id="destaque" href="/" style="font-weight: 700; color: white;">
+                        HOME
+                    </a>
+                </li>
+                <li>
+                    <a href="/" style="font-size: 16px; color: #ccc;">
+                        Capas
+                    </a>
+                </li>
+                <li>
+                    <a href="/" style="font-size: 16px; color: #ccc;">
+                        Polícia
+                    </a>
+                </li>
+                <li>
+                    <a href="/" style="font-size: 16px; color: #ccc;">
+                        Política
+                    </a>
+                </li>
+                <li>
+                    <a href="/" style="font-size: 16px; color: #ccc;">
+                        BBB
+                    </a>
+                </li>
+                <li>
+                    <a href="/" style="font-size: 16px; color: #ccc;">
+                        Cidades
+                    </a>
+                </li>
+                <li>
+                    <a href="/" style="font-size: 16px; color: #ccc;">
+                        Brasil & Mundo
+                    </a>
+                </li>
+                <li>
+                    <a href="/" style="font-size: 16px; color: #ccc;">
+                        Entretenimento
+                    </a>
+                </li>
+                <li>
+                    <a href="/" style="font-size: 16px; color: #ccc;">
+                        Esportes
+                    </a>
+                </li>
+                <li>
+                    <a href="/" style="font-size: 16px; color: #ccc;">
+                        Webstories
+                    </a>
+                </li>
+                <li>
+                    <a href="/" style="font-size: 16px; color: #ccc;">
+                        Tá Bombando!
+                    </a>
+                </li>
+                <li>
+                    <a href="/" style="font-size: 16px; color: #ccc;">
+                        Vídeos
+                    </a>
+                </li>
+            </ul>
+            <div class="menu-aside-footer" style="display: flex; padding: 30px 20px; justify-content: start; gap: 10px; border-top: 1px solid #edededed;">
+                <a href="/" target="_blank" rel="noopener">
+                    <img loading="lazy" src="/assets/icons/facebook.svg" alt="Logo-facebook" width="25" height="25">
+                </a>
+                <a href="/" target="_blank" rel="noopener">
+                    <img src="/assets/icons/twitter.svg" alt="Logo-twitter" width="25" height="25">
+                </a>
+                <a href="/" target="_blank" rel="noopener">
+                    <img src="/assets/icons/instagram.svg" alt="Logo-instagram" width="25" height="25">
+                </a>
+                <a href="/" target="_blank" rel="noopener">
+                    <img src="/assets/icons/youtube.svg" class="icon" alt="Logo-twitter" width="25" height="25">
+                </a>
+            </div>
+        </div>
+
+
+JAVASCRIPT
+
+<script>
+        let menu = document.querySelector("#nav-aside")
+        let btnClose = document.querySelector("#fechar-menu")
+        let btnOpen = document.querySelector("#aside-menu")
+
+        btnClose.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            menu.classList.toggle('menu-aside-open')
+        })
+
+        btnOpen.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            menu.classList.toggle('menu-aside-open')
+        })
+</script>
