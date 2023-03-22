@@ -1,12 +1,12 @@
 @font-face {
     font-family: 'Inter';
-    src: url("/assets/fonts/Inter-Regular.otf") format("opentype");
+    src: url("../assets/fonts/Inter-Regular.otf") format("opentype");
     font-display: block;
 }
 
 @font-face {
     font-family: 'Inter-bold';
-    src: url("/assets/fonts/Inter-Bold.otf") format("opentype");
+    src: url("../assets/fonts/Inter-Bold.otf") format("opentype");
     font-display: block;
 }
 
