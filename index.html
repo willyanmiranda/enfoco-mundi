@@ -9,37 +9,253 @@
     <link rel="dns-prefetch" href="https://enfoco-mundiware.netlify.app/">
     <link rel="preconnect" href="https://enfoco-mundiware.netlify.app/">
     <link rel="preload" href="./assets/fonts/Inter-Bold.otf" as="font" type="font/otf" crossorigin>
+    <link rel="preload" as="image" href="./assets/icons/logo-dark.svg" crossorigin>
     <link rel="preload" as="image" href="./assets/img/Lexa.webp" crossorigin>
     <link rel="stylesheet" type="text/css" href="./css/base.css" media="screen">
     <link rel="stylesheet" type="text/css" href="./css/main.css" media="screen">
     <link rel="stylesheet" type="text/css" href="./css/last-news.css" media="screen">
     <link rel="stylesheet" type="text/css" href="./css/footer.css" media="screen">
     <title>Enfoco</title>
+    <style>
+        .enfo-header {
+            width: 100%;
+            background-color: #fff;
+            display: inline-block;
+            position: relative;
+            margin-bottom: 15px;
+            box-shadow: 0 -50px 90px 0 rgb(0 0 0/27%)
+        }
+
+        .header-content .logo {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: fit-content
+        }
+
+        .header-content .logo a img{
+            width: 235px;
+            height: 69px;
+        }
+
+        .header-content {
+            width: 100%;
+            border-top: 1px solid #e9e9e9;
+            border-bottom: 2px solid #000
+        }
+
+        .lineCategory {
+            width: 100%;
+            height: 10px
+        }
+
+        .header-content hr {
+            width: 100%;
+            height: 2px;
+            background-color: #000
+        }
+
+        .header-wrapper {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+            max-width: 1200px;
+            margin: 0 auto;
+            align-items: center;
+            padding: 5px 17px
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #aside-menu {
+            background-color: #000;
+            width: 100%;
+            width: 60px;
+            height: 35px;
+            border-radius: 45px;
+            display: block;
+            margin-left: 50px;
+        }
+
+        #aside-menu span {
+            font-size: 20px;
+            color:#FFF;
+            font-weight:bold
+        }
+
+        .search-bar {
+            display: flex;
+            align-items: center;
+            background-color: #ffffff2e;
+            border: 1px solid #afafaf;
+            border-radius: 95px;
+            width: 200px;
+            overflow: hidden;
+            padding: 10px;
+            gap: 5px;
+        }
+
+        .search-bar input {
+            width: 100%;
+            font-size: 15px;
+        }
+
+        .search-bar button {
+            background-color: transparent;
+        }
+
+        /*Article header*/
+
+        .enfo-article-main-container {
+            max-width: 1240px;
+            margin: 0 auto;
+            display: grid;
+            column-gap: 40px;
+            grid-template-columns: repeat(5, 1fr);
+            color: #000;
+        }
+
+        .enfo-article-container {
+            grid-column: span 4;
+            display: flex;
+            flex-direction: column;
+            padding: 17px;
+            max-width: 873px; 
+        }
+
+        .enfo-article-header{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            border-bottom: 1px solid #e9e9e9;
+            padding: 10px 0;
+        }
+        .titleArticle {
+            font-size: 46px;
+            font-weight: 700;
+            line-height: 50px;
+            user-select: none;
+            word-wrap: break-word;
+            hyphens: none;
+            font-family: 'Inter-bold', Arial 
+        } 
+        .enfo-article-header .spanCategory {
+            font-size: 16px;
+            font-weight: 600;
+            font-family: inherit;
+            padding: 5px;
+            color: white;
+            width: fit-content;
+            border-radius: 5px;
+            user-select: none;
+            background-color: #9C28B9
+        }
+
+        .article-date{
+            align-items: center;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+            font-size: 15px;
+            font-weight: 400;
+            color:#54595f;
+        }
+        .enfo-article-header .social-media{
+            height: 30px;
+            margin-bottom: 15px;
+        }
+
+        .enfo-article-header h2 {
+            font-size: 15px;
+        }
+
+        .icons-social-medias {
+            border-radius: 4px;
+            width: 20px;
+            height: 20px;
+            padding: 6px;
+            box-sizing: content-box;
+            margin-right: 5px;
+            cursor: pointer;
+        }
+
+        .social-facebook {
+            background-color: #3b5998;
+        }
+        .social-twitter {
+            background-color: #1da1f2;
+        }
+        .social-whatsapp {
+            background-color: #25d366;
+        }
+        .social-email {
+            background-color: #ea4335;
+        }
+
+        .social-facebook:hover {
+            background-color: #366CDD;
+        }
+        .social-twitter:hover {
+            background-color: #00CFFF;
+        }
+        .social-whatsapp:hover {
+            background-color: #00FF54;
+        }
+        .social-email:hover {
+            background-color: #FF3C22;
+        }
+
+        .twitter-tweet{
+            margin: 30px 0 !important;
+        }
+
+        .instagram-media{
+            margin: 40px 0 !important;
+        }
+
+        .enfo-article-content{
+            padding: 25px 0;
+            border-bottom: 1px solid #e9e9e9;
+        }
+
+        .enfo-article-content a{
+            color: blue;
+        }
+
+        .enfo-default-gray {
+            color: rgb(49, 47, 47);
+        }
+
+    </style>
 </head>
 
 <body>
-    <header class="enfo-header" style="width: 100%; background-color: #fff; display: inline-block; position: relative; margin-bottom: 15px; box-shadow: 0 -50px 90px 0 rgb(0 0 0/27%)">
-        <div class="header-content" style="width: 100%; border-top: 1px solid #e9e9e9; border-bottom: 2px solid #000">
-            <div class="header-wrapper" style=" display: flex; justify-content: space-between; gap: 10px; max-width: 1200px; margin: 0 auto; align-items: center; padding: 5px 17px">
-                <div class="header-container" style="display: flex; justify-content: center; align-items: center;">
-                    <figure class="logo" style="display: flex; flex-direction: row; justify-content: space-between; width: fit-content">
+    <header class="enfo-header">
+        <div class="header-content" >
+            <div class="header-wrapper" >
+                <div class="header-container" >
+                    <figure class="logo" >
                         <a href="/">
-                            <img src="./assets/icons/logo-dark.svg" alt="Logo" width="235px" height="69px">
+                            <img src="./assets/icons/logo-dark.svg" alt="Logo" style="width: 235px; height: 69px;">
                         </a>
                     </figure>
-                    <button id="aside-menu" style="background-color: #000; width: 60px; height: 35px; border-radius: 45px; display: block; margin-left: 50px;">
-                        <span style="font-size: 20px; color:#FFF; font-weight:bold">☰</span>
+                    <button id="aside-menu" >
+                        <span>☰</span>
                     </button>
                 </div>
-                <div class="search-bar" style="display: flex; align-items: center; background-color: #ffffff2e; border: 1px solid #afafaf; border-radius: 95px; width: 200px; overflow: hidden; padding: 10px; gap: 5px;">
-                    <button class="search-button" aria-label="search button" style="background-color: transparent;">
-                        <img src="./assets/icons/icons-search.svg" alt="search" style="height: 26px; width: 27px;">
+                <div class="search-bar" >
+                    <button class="search-button" aria-label="search button" >
+                        <img src="./assets/icons/icons-search.svg" alt="search" >
                     </button>
-                    <input type="text" id="search" placeholder="O que está buscando?" class="search-input" style="width: 100%; font-size: 15px;">
+                    <input type="text" id="search" placeholder="O que está buscando?" class="search-input">
                 </div>
             </div>
         </div>
-        <hr class="lineCategory" style="background-color:#9C28B9;  width: 100%; height: 10px;">
+        <hr class="lineCategory" style="background-color:#9C28B9;">
     </header>
     <main class="enfo-article-main-container">
         <section class="enfo-article-container">
@@ -88,19 +304,25 @@
                 </div>
             </div>
             <div class="enfo-article-content">
-                <p class="enfo-texto">
+               
                 <div class="enfo-article-img-box ">
-                    <img src="./assets/img/Lexa.webp"
-                        alt="Cantora desabafou nas redes sociais" class="img-destaque">
-                    <div class="enfo-image-info" style="margin: 10px auto;">
-                        <span class="enfo-image-title">
-                            Cantora desabafou nas redes sociais
-                        </span>
-                        <span class="enfo-image-author">
-                            Foto:
-                            Reprodução/Instagram
-                        </span>
-                    </div>
+                    <figure>
+                        <picture>
+                            <img src="./assets/img/Lexa.webp"
+
+                                 srcset="./assets/img/lexa-mobile.webp 255w,
+                                         ./assets/img/Lexa.webp 876w,
+                                         ./assets/img/lexa-media.webp 1379w,
+                                         ./assets/img/lexa-grande.webp 1746w"
+
+                                         sizes="(min-width: 1300px) 873px, (min-width: 720px) calc(91.79vw - 302px), calc(80vw - 32px)"
+
+                                         alt="Cantora desabafou nas redes sociais" class="img-destaque">
+                        </picture>
+                        <figcaption class="enfo-image-info" style="margin: 10px auto;">
+                            Cantora desabafou nas redes sociais Foto: Reprodução/Instagram
+                        </figcaption>
+                    </figure>
                 </div>
 
                 <p>Após toda a polêmica envolvendo o nome do funkeiro Mc Guimê e sua expulsão do BBB 23, alguns boatos
@@ -110,26 +332,37 @@
                     acontecido uma festa em sua casa.
                 </p>
 
-                <div class="tweet">
+                <figure class="tweet">
                     <img src="./assets/img/twi.webp" alt="tweet">
-                </div>
+                </figure>
 
                 <p>Algumas horas depois a cantora usou seu Instagram para mandar mensagens aos fãs, amigos e os mais de
                     20 milhões de seguidores na rede social.</p>
                 <div class="enfo-article-img-box ">
-                    <img src="./assets/img/stories.webp"
-                        alt="Lexa postou um stories neste sábado"
-                        id="stories-img"
-                        >
-                    <div class="enfo-image-info" style="margin: 10px auto;">
-                        <span class="enfo-image-title">
-                            Lexa postou um stories neste sábado
-                        </span>
-                        <span class="enfo-image-author">
-                            Foto:
-                            Reprodução/Instagram
-                        </span>
-                    </div>
+                    <figure>
+                        <picture>
+                            <img src="./assets/img/stories.webp"
+
+                                 srcset="./assets/img/stories-256.webp 256w,
+                                         ./assets/img/stories-550.webp 550w,
+                                         ./assets/img/stories.webp 739w,
+                                         ./assets/img/stories-940.webp 940w,
+                                         ./assets/img/stories-1100.webp 1100w,
+                                         ./assets/img/stories-1240.webp 1240w,
+                                         ./assets/img/stories-1360.webp 1360w,
+                                         ./assets/img/stories-1478.webp 1478w,
+                                         ./assets/img/stories-1540.webp 1540w,
+                                         ./assets/img/stories-1600.webp 1600w"
+
+                                         sizes="(min-width: 1180px) 739px, (min-width: 720px) calc(100vw - 361px), calc(80vw - 32px)"
+                                         
+                                         alt="Lexa postou um stories neste sábado" id="stories-img">
+                        </picture>
+                        <figcaption class="enfo-image-info" style="margin: 10px auto;">
+                            Lexa postou um stories neste sábado  Foto: Reprodução/Instagram
+                        </figcaption>
+                    </figure>    
+                    
                 </div>
 
                 <p>
